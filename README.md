@@ -1,12 +1,10 @@
 # Calculator
 
-### <b>View:</b> [clique aqui](https://nashcompany.cf/global/);
+### <b>View:</b> [clique aqui](https://henrilima.github.io/nash.calculator/);
  
  <br/>
 
- # Screenshots
-
-### Desktop Version:
+# Screenshots
 
 > ![Desktop](./assets/screen.png)
 And nothing else. :D
