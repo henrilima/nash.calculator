@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌎</text></svg>"
+        />
+
+        <link rel="stylesheet" href="./stylesheet/style.css" />
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <section class="calculator">
+            <div class="screen">
+                <span class="last-calc" id="last-calc">0</span>
+                <hr />
+                <span class="result" id="result">0</span>
+            </div>
+
+            <div class="c-buttons">
+                <div class="b1">
+                    <div class="block symbol c" onclick="clean()">C</div>
+                    <div class="block disable"></div>
+                    <div class="block symbol" onclick="removeLast()">←</div>
+                    <div class="block symbol" onclick="total()">=</div>
+                </div>
+                <div class="b2">
+                    <div>
+                        <div class="block" onclick="acr(7)">7</div>
+                        <div class="block" onclick="acr(4)">4</div>
+                        <div class="block" onclick="acr(1)">1</div>
+                        <div class="block disable"></div>
+                    </div>
+                    <div>
+                        <div class="block" onclick="acr(8)">8</div>
+                        <div class="block" onclick="acr(5)">5</div>
+                        <div class="block" onclick="acr(2)">2</div>
+                        <div class="block" onclick="acr(0)">0</div>
+                    </div>
+                    <div>
+                        <div class="block" onclick="acr(9)">9</div>
+                        <div class="block" onclick="acr(6)">6</div>
+                        <div class="block" onclick="acr(3)">3</div>
+                        <div class="block disable"></div>
+                    </div>
+                    <div>
+                        <div class="block symbol" onclick="acr('/', 'symbol')">
+                            /
+                        </div>
+                        <div class="block symbol" onclick="acr('*', 'symbol')">
+                            X
+                        </div>
+                        <div class="block symbol" onclick="acr('-', 'symbol')">
+                            -
+                        </div>
+                        <div class="block symbol" onclick="acr('+', 'symbol')">
+                            +
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./javascript/main.js"></script>
+    </body>
+</html>

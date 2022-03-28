@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --y: #ebb113;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f2f2f2;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+section.calculator {
+    width: 320px;
+    height: 514px;
+    background-color: #3a4656;
+    -webkit-box-shadow: 10px 10px 30px #000;
+    box-shadow: 10px 10px 30px #000;
+}
+
+div.screen {
+    width: 100%;
+    height: 22%;
+    background-color: #353e4b;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+span#result {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-right: 2rem;
+}
+
+span#last-calc {
+    color: rgba(173, 173, 173, 0.6);
+    padding-right: 2rem;
+}
+
+div.c-buttons {
+    width: 100%;
+    height: 78%;
+    padding-top: 0.4rem;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+div.b1,
+div.b2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div.b2 {
+    margin-top: -4px;
+}
+
+hr {
+    width: 84%;
+    margin: 8px auto 12px auto;
+    border-color: rgba(173, 173, 173, 0.2);
+}
+
+div.block {
+    margin: 4px 2px;
+    width: 72px;
+    height: 72px;
+    color: #f2f2f2;
+    background-color: #435061;
+
+    font-size: 2rem;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+div.block.symbol {
+    cursor: pointer;
+    background-color: #404d5e;
+}
+
+div.block:hover {
+    cursor: pointer;
+    background-color: #353e4b;
+}
+
+.symbol {
+    color: rgb(173, 173, 173) !important;
+}
+
+.c {
+    color: #e23d3d !important;
+    font-weight: 500;
+}
+
+div.block.disable:hover {
+    cursor: auto;
+    background-color: #435061;
+}
