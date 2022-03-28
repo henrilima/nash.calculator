@@ -1,8 +1,9 @@
 var symbol = 0;
+var last = document.getElementById("last-calc");
+var result = document.getElementById("result");
 
 function clean() {
-    var last = document.getElementById("last-calc");
-    var result = document.getElementById("result");
+    result = document.getElementById("result");
 
     last.innerText = "0";
     result.innerText = "0";
@@ -16,7 +17,7 @@ function acr(string, type) {
         isSymbol(string);
     }
 
-    var result = document.getElementById("result");
+    result = document.getElementById("result");
 
     if (result.innerText.length > 16) {
         return alert("O limite máximo é de 17 caracteres.");
@@ -34,8 +35,7 @@ function acr(string, type) {
 }
 
 function total() {
-    var last = document.getElementById("last-calc");
-    var result = document.getElementById("result");
+    result = document.getElementById("result");
 
     last.innerText = result.innerText;
     try {
@@ -46,7 +46,7 @@ function total() {
 }
 
 function removeLast() {
-    var result = document.getElementById("result");
+    result = document.getElementById("result");
     var list = result.innerText.split("");
     list.splice(-1, 1);
 
@@ -56,7 +56,7 @@ function removeLast() {
 }
 
 function isSymbol(string) {
-    var result = document.getElementById("result");
+    result = document.getElementById("result");
     var list = result.innerText.split("");
     var idk = list.pop();
 
