@@ -1,10 +1,6 @@
-# Calculator
+# Global Chat
 
-### <b>View:</b> [clique aqui](https://henrilima.github.io/nash.calculator/);
- 
- <br/>
+### Projeto modificado e movido para o site da Chromac:
+https://chromacweb.cf/
 
-# Screenshots
-
-> ![Desktop](./assets/screen.png)
 And nothing else. :D
